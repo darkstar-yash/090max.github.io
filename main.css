@@ -57,7 +57,7 @@ body{
 header{
 	
 	width:100%;
-	height: 8%;
+	height: 10%;
 	display: flex;
 	animation-name: colchange;
 	animation-duration: 15s;
@@ -68,14 +68,14 @@ header{
 	margin-top: 8px;
 	color: white;
 	flex:2;
-	margin-left: 5%;
+	margin-left: 2%;
 	text-shadow: 2px 2px 4px #000000;
 	font-family: serif;
-	font-size: 25px;
+	font-size: 15px;
 }
 #up-two{
 	margin-top: 8px;
-    margin-right:10%;
+    margin-right:4%;
 }
 #up-two a{
 	text-decoration: none;
@@ -83,7 +83,7 @@ header{
 	
 	flex:1;
 	text-shadow: 2px 2px 4px #000000;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #one{
@@ -117,13 +117,13 @@ header{
   animation-fill-mode: none;
   animation-play-state: running;
 
-	height:100px;
-	width:100px;
+	height:50px;
+	width:50px;
 	
 }
 #power{
-	height:100px;
-	width:100px;
+	height:50px;
+	width:50px;
 	animation-name: burnout;
 	animation-duration:6s;
 	animation-timing-function: ease-out; 
@@ -137,10 +137,10 @@ header{
 
 }
 #mind{
-	height:100px;
-	width:100px;
+	height:50px;
+	width:50px;
 	float:right;
-	margin-right: 20%;
+	margin-right: 10%;
 	animation-name: burnin;
 	animation-duration:6s;
 	animation-timing-function: ease-out; 
@@ -152,10 +152,10 @@ header{
 
 }
 #time{
-	height:100px;
+	height:50px;
 	width:100px;
     float:left;
-    margin-left: 20%;
+    margin-left: 10%;
     animation-name: burnout;
 	animation-duration:6s;
 	animation-timing-function: ease-out; 
@@ -167,8 +167,8 @@ header{
 
 }
 #space{
-	height:100px;
-	width:100px;
+	height:50px;
+	width:50px;
 		animation-name: burnout;
 	animation-duration:6s;
 	animation-timing-function: ease-out; 
@@ -181,8 +181,8 @@ header{
 
 }
 #reality{
-	height:100px;
-	width:100px;
+	height:50px;
+	width:50px;
 	animation-name: burnin;
 	animation-duration:6s;
 	animation-timing-function: ease-out; 
