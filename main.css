@@ -1,0 +1,188 @@
+body{
+	margin:0 auto;
+}
+@keyframes colchange{
+	0%{
+		background:transparent;
+	}
+	30%{
+		background-color:#B4B7BA;
+	}
+	60%{
+		background-color:#EADEDB;
+	}
+	100%{
+		background:transparent;
+	}
+}
+header{
+	
+	width:100%;
+	height: 40px;
+	display: flex;
+	animation-name: colchange;
+	animation-duration: 15s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+#up-one{
+	margin-top: 3px;
+	color: white;
+	flex:2;
+	margin-left: 100px;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: serif;
+	font-size: 25px;
+}
+#up-two{
+	margin-top: 8px;
+}
+#up-two a{
+	text-decoration: none;
+	margin-top:10px;
+	color:white;
+	margin-right: 100px;
+	flex:1;
+	text-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+}
+
+#one{
+     margin-top: 30px;
+     width:25%;
+       margin-left: auto;
+    margin-right: auto;
+   
+}
+#two{
+	margin-top:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}   
+}
+#three{
+	margin-top:50px;
+    
+}
+@keyframes burnin{
+	0% {
+		box-shadow: 0 5px 15px 0px;
+		
+	}
+	50% {
+		
+		transform: translatey(-20px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+
+}
+@keyframes burnout{
+	0% {
+		
+		transform: translatey(0px);
+
+	}
+	50% {
+		
+		transform: translatey(20px);
+		
+	}
+	100% {
+		transform: translatey(0px);
+		
+		
+	}
+
+}
+
+
+#soul{
+	animation-name: burnin;
+	animation-duration:6s;
+	animation-timing-function: ease-out; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+
+	height:150px;
+	width:150px;
+	
+}
+#power{
+	height:150px;
+	width:150px;
+	animation-name: burnout;
+	animation-duration:6s;
+	animation-timing-function: ease-out; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+
+    
+
+}
+#mind{
+	height:150px;
+	width:150px;
+	float:right;
+	margin-right: 280px;
+	animation-name: burnin;
+	animation-duration:6s;
+	animation-timing-function: ease-out; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+
+}
+#time{
+	height:150px;
+	width:150px;
+    float:left;
+    margin-left: 280px;
+    animation-name: burnout;
+	animation-duration:6s;
+	animation-timing-function: ease-out; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+
+}
+#space{
+	height:150px;
+	width:150px;
+		animation-name: burnout;
+	animation-duration:6s;
+	animation-timing-function: ease-out; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+
+
+}
+#reality{
+	height:150px;
+	width:150px;
+	animation-name: burnin;
+	animation-duration:6s;
+	animation-timing-function: ease-out; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
