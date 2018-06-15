@@ -88,8 +88,8 @@ header{
 }
 
 #one{
-     margin-top: 45%;
-     width:28%;
+     margin-top: 30%;
+     min-width:40%;
        margin-left: auto;
     margin-right: auto;
    
@@ -98,7 +98,7 @@ header{
 	margin-top:65%;
     margin-left: auto;
     margin-right: auto;
-    width: 28%;
+    min-width:40%;
 }   
 
 #three{
