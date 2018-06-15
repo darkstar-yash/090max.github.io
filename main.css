@@ -88,14 +88,14 @@ header{
 }
 
 #one{
-     margin-top: 18%;
-     width:30%;
+     margin-top: 30%;
+     width:25%;
        margin-left: auto;
     margin-right: auto;
    
 }
 #two{
-	margin-top:28%;
+	margin-top:45%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -103,7 +103,7 @@ header{
 }   
 
 #three{
-	margin-top:9%;
+	margin-top:10%;
     
 }
 
@@ -118,13 +118,13 @@ header{
   animation-fill-mode: none;
   animation-play-state: running;
 
-	height:50px;
-	width:50px;
+	height:35px;
+	width:35px;
 	
 }
 #power{
-	height:50px;
-	width:50px;
+	height:35px;
+	width:35px;
 	animation-name: burnout;
 	animation-duration:6s;
 	animation-timing-function: ease-out; 
@@ -141,7 +141,7 @@ header{
 	height:50px;
 	width:50px;
 	float:right;
-	margin-right: 18%;
+	margin-right: 17%;
 	animation-name: burnin;
 	animation-duration:6s;
 	animation-timing-function: ease-out; 
@@ -168,8 +168,8 @@ header{
 
 }
 #space{
-	height:50px;
-	width:50px;
+	height:35px;
+	width:35px;
 		animation-name: burnout;
 	animation-duration:6s;
 	animation-timing-function: ease-out; 
@@ -182,8 +182,8 @@ header{
 
 }
 #reality{
-	height:50px;
-	width:50px;
+	height:35px;
+	width:35px;
 	animation-name: burnin;
 	animation-duration:6s;
 	animation-timing-function: ease-out; 
@@ -281,7 +281,7 @@ header{
 
 #one{
      margin-top: 8%;
-     width:50%;
+     width:25%;
        margin-left: auto;
     margin-right: auto;
    
@@ -291,7 +291,7 @@ header{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 25%;
 }   
 
 #three{
