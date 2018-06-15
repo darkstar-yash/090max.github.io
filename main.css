@@ -140,7 +140,7 @@ header{
 	height:50px;
 	width:50px;
 	float:right;
-	margin-right: 17%;
+	margin-right: 13%;
 	animation-name: burnin;
 	animation-duration:6s;
 	animation-timing-function: ease-out; 
@@ -155,7 +155,7 @@ header{
 	height:50px;
 	width:50px;
     float:left;
-    margin-left: 10%;
+    margin-left: 8%;
     animation-name: burnout;
 	animation-duration:6s;
 	animation-timing-function: ease-out; 
