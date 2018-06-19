@@ -1,0 +1,133 @@
+<html>
+<head>
+	<style>
+    header{
+    	background-color: purple;
+    	height:80px;
+    	padding:3px;
+    	border:1px solid purple;
+    	display: flex;
+    }
+    body{
+    	margin:0 auto;
+
+    }
+    #main li{ 
+          display:block;
+          font-family: sans-serif;
+          font-size: 40px;
+          color:white;
+          height: 40px;
+          border: 1px solid purple;
+          text-align: center;
+           margin:0; 
+          text-shadow: 2px 6px 8px red;
+
+    } 
+    
+    #sub li{
+    	display:none;
+    	color: white;
+    	opacity: 0.8;
+    	background-color: black;
+    	font-size: 20px;
+    	text-align: center;
+    }    	
+    #main li:hover{
+    	
+        
+    	border-top:4px solid green;
+
+    }
+    #main li:hover #sub li{
+    	      	   
+    	       display: block;
+        
+    }
+     #power{
+    	max-width:25%;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+    main{
+    	background-color:  #C0AB8E;
+    	border: 5px double white;
+    	border-radius: 10px;
+    	width:50%;
+    	  	margin-right: auto;
+        margin-left: auto;
+        margin-top:8%;
+        font-size: 20px;
+        padding: 10px;
+        
+
+    }
+    h2{
+    	margin-top: 0;
+    	border-radius: 7px;
+    	background-color: #3D9970 ;
+    	color: white;
+    	text-align: center;
+        text-shadow: 2px 4px 7px purple; 
+        box-shadow: 2px 2px 7px purple;
+    }
+     i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+    margin-left:10px;
+
+}
+#sub{
+	width:120%;
+	float: right;
+
+}
+#sub li:hover{
+          border-top: 2px solid yellow;
+}
+    .down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+#power_text{
+	animation-name: pict;
+	animation-duration: 5s;
+}
+
+#sub li a{
+	text-decoration: none;
+	color: white;
+		text-shadow: 0 0 3px red;
+
+    
+}
+#about{
+	color:DarkSlateGray;
+}
+</style>
+</head>
+<body background="back.jpg">
+	<header>
+    <div id="power">
+    <ul id="main" align="center">
+    <li>OPTIONS<i class="arrow down"></i>
+     <ul div id="sub">
+    <li><a href="#">GYM AND TRAINING</a>
+    <li><a href="#">YOGA</a>
+    <li><a href="#">HEALTHY DIET</a>
+    </ul>
+    </li>
+    </ul>
+    </div>
+	</header>
+	
+	<main>
+
+    <h2>ABOUT</h2>
+    <article id="about">You have selected the <font color="purple">POWER STONE.</font> 
+    <p>This grants you the acess to the Health And Fitness section of the website.Power is generally understood to mean the ability to achieve a desired outcome and that is only possible if one has good mental and physical health</p></article>
+	</main>
+
+</body>
