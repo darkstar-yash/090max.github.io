@@ -1,30 +1,283 @@
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="https://090max.github.io/main.css">
-	
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All stop</title>
 
+
+
+
+<style>
+@keyframes size{
+  0%{
+    transform: scale(0.8);
+
+  }
+  40%
+  {
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.8);
+  }
+}
+@keyframes next{
+  0%{
+    transform: translateY(0px) ;
+    
+  }
+  50%{
+     transform: translateY(10px) ;
+        }
+  
+  100%{
+      transform: translateY(0px) ;
+          
+  }
+}
+
+@keyframes typing{
+  from{
+    width:0;
+  }
+  to{
+    width:100%;
+  }
+}
+
+ body{
+ 	margin:0 auto;
+
+ }
+ 
+#main{
+  position: absolute;
+  top:0;
+  left:0;
+  background: linear-gradient(45deg,blue,red);
+}
+.description-desc{
+  font-size: 7vh;
+  margin-top:30vh;
+  position: absolute;
+  color: white;
+  text-shadow: 1px 3px 7px red;
+  width:100vw;
+  
+
+}
+.gym-desc{
+  font-size: 10vh;
+  margin-top:50vh;
+  position: absolute;
+  color: white;
+  text-shadow: 1px 3px 7px red;
+  width:100vw;
+  text-align: center;
+}
+
+.news-desc{
+  font-size: 8vh;
+  margin-top:50vh;
+  position: absolute;
+  color: #0000CD;
+  text-shadow: 1px 6px 8px white;
+  width:100vw;
+  text-align: center;
+}
+
+.utility-desc{
+  font-size: 8vh;
+  margin-top:50vh;
+  position: absolute;
+  color:  #FF4500;
+  text-shadow: 1px 6px 8px green;
+  width:100vw;
+  text-align: center;
+}
+.next{
+   margin-top:80vh;
+   position: absolute;
+   font-size: 40px;
+   text-align: center;
+   color: yellow;
+   width: 100vw;
+   animation: next 2s infinite;
+    animation-delay: 0s;
+    cursor: pointer;
+    
+}
+p{
+    text-align: center;
+    animation:typing 4s steps(45);
+  overflow :hidden;
+  white-space:nowrap;
+  padding: 0;
+  
+}
+section{
+  width: 100vw; 
+  height:100vh;
+  margin: 0;
+  display: flex;
+  position: relative;
+}
+img{
+  width:100vw;
+  height: 100vh;
+}
+h2{
+  margin-top:40vh;
+}
+
+.option{
+width:100vw;
+
+}
+.option li{
+  position:relative;
+
+}
+.option ul li{
+  display: none;
+}
+.option div{
+  display: inline-block;
+  width: 20vw;
+  text-decoration: none;
+  border:3px solid black;
+  color: white;
+
+  
+  background-color: black;
+  height: 60vh;
+  margin-top:10vh;
+  border-radius: 20px;
+  animation-name: size;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.option li:hover ul li{
+  float:left;
+  display: block;
+  border:2px solid green;
+  line-height: 8vh;
+  width:80%;
+  position: relative;
+  margin-top: 0;
+  
+
+}
+
+.option div:hover{
+  background-color:#8B4513;
+}
+.option ul li:hover{
+  background-color: green;
+}
+
+.gym li,.news li,.utility li{
+     margin-top:20vh;
+}
+.gym li a,.news li a,.utility li a{
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 4px 4px red;
+}
+
+</style>
 </head>
-<body background="https://090max.github.io/back1.jpg">
-<header>
-	<div id="up-one">PLEASE SELECT A STONE TO PROCEED</div>
-	<div id="up-two"><a href="#">ABOUT SITE</a></div>
-</header>
-<main>
-	
+<body>
+<script>
+window.onload=function(){
+  var main = document.getElementById("main");
+var sections = main.getElementsByTagName('section');
+// This transition can be defined in the CSS if preferred.
+var transition = '.8s cubic-bezier(0,.75,.75,0)';
+main.style.transition = transition;
+main.onclick = slideDown;
 
-<div id="one">
-<img id="soul" src="https://090max.github.io/soul.png" alt="SOUL">
-<a href="https://090max.github.io/power/power.html"><img id="power" src="https://090max.github.io/power.png" alt="POWER"></a>
-</div>
-<div id="three">
-<a href="https://090max.github.io/time/time.html"><img id="time" src="https://090max.github.io/time2.png">
-<img id="mind" src="https://090max.github.io/mind.png">
-</div>
-<div id="two">
-<img id="space" src="https://090max.github.io/space.png" >
-<img id="reality" src="https://090max.github.io/reality.png" >
-</div>
-</main>
+function slideDown(event) {
+
+  
+  // Delegate.
+  if (event.target.className != 'next') {
+    return;
+  }
+  
+  // Prevent firing simultaneously.
+  main.onclick = '';
+  self = event.target.parentNode;
+  var offset = self.getBoundingClientRect();
+  var scroll = self.offsetTop;
+  
+
+  // CSS Transition slide.
+  main.style.top = (-offset.height-offset.top) + 'px';
+  setTimeout(function () {
+    // Reposition the real scrollbar.
+    main.style.transition = 'none';
+    main.style.top = 0;
+     window.scrollTo(0, offset.height+scroll);
+    main.style.transition = transition;
+    // Reattach event.
+    main.onclick = slideDown;
+    
+    // This timeout length should match the CSS animation time (.8s).
+  }, 800);
+}
+}
+</script>
+
+        <div id="main">
+        <section class="discover">
+            <center><div class="description-desc"><p>DISCOVER US RIGHT HERE</p> </div></center> 
+         <div class="next"> &#x25BC; </div>
+        </section>
+        <section class="gym-page">
+           <img src="https://090max.github.io/gym_back.jpg">
+           <div class="gym-desc">KEEP A TRACK OF YOUR FITNESS</div>
+           <div class="next">&#x25BC;</div>
+        </section>
+        <section class="news-page">
+              <img src="https://090max.github.io/news-back.jpg">
+              <div class="news-desc">KEEP A TRACK OF THE WORLD AROUND YOU</div>
+               <div class="next">&#x25BC;</div>
+        </section>
+        <section class="utility-page">
+            <img src="https://090max.github.io/utility_back.jpg">
+            <div class="utility-desc">KEEP A TRACK OF YOUR ACTIVITIES</div>
+             <div class="next">&#x25BC;</div>
+        </section>
+        <section class="end-page">
+             <center>
+            
+            <ul class="option" type="none">
+            <div class="gym">
+            
+            <li>FITNESS &#x25BC;
+            <ul type="none">
+            <li><a href="gym.html">GYM AND TRAINING</a>
+            <li><a href="gym.html">MEDITATION</a>
+            <li><a href="gym.html">NUTRITION</a>
+            </ul>
+            
+            </div>
+            
+            <div class="news">
+            
+            <li><a href="gym.html">NEWS</a>
+            
+            </div>
+            <div class ="utility">
+            
+            <li><a href="gym.html">UTILITY</a>
+            
+            </div>
+            </ul>
+            </center>
+        </section>
+        
+        </div>
+  
 </body>
+
 </html>
