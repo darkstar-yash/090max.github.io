@@ -1,12 +1,20 @@
 <html>
 <head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>All stop</title>
 
 
 
 
 <style>
-@keyframes size{
+@media only screen and (max-width: 600px)
+  {
+  
+  
+  
+  @keyframes size{
   0%{
     transform: scale(0.8);
 
@@ -45,11 +53,199 @@
 
  body{
  	margin:0 auto;
+   overflow:hidden;
 
  }
  
 #main{
   position: absolute;
+  top:0;
+  background: linear-gradient(45deg,blue,red);
+}
+.description-desc{
+  font-size: 3vh;
+  margin-top:30vh;
+  position: absolute;
+  color: white;
+  text-shadow: 1px 4px 7px red;
+  width:100vw;
+  
+
+}
+.gym-desc{
+  font-size: 4vh;
+  margin-top:40vh;
+  position: absolute;
+  color: white;
+  text-shadow: 1px 7px 9px red;
+  width:100vw;
+  text-align: center;
+}
+
+.news-desc{
+  font-size: 8vh;
+  margin-top:50vh;
+  position: absolute;
+  color: #0000CD;
+  text-shadow: 1px 6px 8px white;
+  width:100vw;
+  text-align: center;
+}
+
+.utility-desc{
+  font-size: 4vh;
+  margin-top:50vh;
+  position: absolute;
+  color:  #FF4500;
+  text-shadow: 1px 6px 8px green;
+  width:100vw;
+  text-align: center;
+}
+.next{
+   margin-top:80vh;
+   position: absolute;
+   font-size: 80px;
+   text-align: center;
+   color: yellow;
+   width: 100vw;
+   animation: next 2s infinite;
+    animation-delay: 0s;
+    cursor: pointer;
+    
+}
+p{
+    text-align: center;
+    animation:typing 4s steps(45);
+  overflow :hidden;
+  white-space:nowrap;
+  padding: 0;
+  
+}
+section{
+  width: 100%; 
+  height:100vh;
+  margin: 0;
+  display: flex;
+  position: relative;
+}
+img{
+  width:100%;
+  height: 100vh;
+}
+h2{
+  margin-top:40vh;
+}
+
+.option{
+width:100vw;
+
+}
+.option li{
+  position:relative;
+
+}
+.option ul li{
+  display: none;
+}
+.option div{
+  display: inline-block;
+  width: 20vw;
+  text-decoration: none;
+  border:3px solid black;
+  color: white;
+
+  
+  background-color: black;
+  height: 40vh;
+  margin-top:8vh;
+  border-radius: 20px;
+  animation-name: size;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.option li:hover ul li{
+  float:left;
+  display: block;
+  border:2px solid green;
+  line-height: 8vh;
+  width:80%;
+  position: relative;
+  margin-top: 0;
+  
+
+}
+
+.option div:hover{
+  background-color:#8B4513;
+}
+.option ul li:hover{
+  background-color: green;
+}
+
+.gym li,.news li,.utility li{
+     margin-top:20vh;
+}
+.gym li a,.news li a,.utility li a{
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 4px 4px red;
+}
+
+    
+    
+    
+  }
+  
+ @media only screen and (min-width: 480px)
+   {
+  
+  
+  @keyframes size{
+  0%{
+    transform: scale(0.8);
+
+  }
+  40%
+  {
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.8);
+  }
+}
+@keyframes next{
+  0%{
+    transform: translateY(0px) ;
+    
+  }
+  50%{
+     transform: translateY(10px) ;
+        }
+  
+  100%{
+      transform: translateY(0px) ;
+          
+  }
+}
+
+@keyframes typing{
+  from{
+    width:0;
+  }
+  to{
+    width:100%;
+  }
+}
+
+ body{
+ 	margin:0 auto;
+   overflow:hidden;
+
+ }
+ 
+#main{
+  position: absolute;
+  top:0;
   background: linear-gradient(45deg,blue,red);
 }
 .description-desc{
@@ -180,7 +376,7 @@ width:100vw;
   color: white;
   text-shadow: 1px 4px 4px red;
 }
-
+  }
 </style>
 </head>
 <body>
