@@ -1,0 +1,182 @@
+<html>
+<head>
+<style>
+@keyframes enfold{
+	0%{
+		transform: scale(0.6);
+		border-radius:70%;
+	}
+	100%{
+		transform:scale(1);
+		border-radius: 40%: 
+	}
+	}
+body{
+	margin:0 auto;
+	background:linear-gradient(red,blue);
+}
+#first{
+	height: 50vh;
+	width:100%;
+	top:0;
+	display: flex;
+	flex-direction: row;
+	border-top:2px solid black;
+	border-bottom: 2px solid black;
+	background-color:  	#696969;
+
+	
+}
+#first:hover div img{
+  border-radius: 20px;
+  	animation-name: enfold;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+
+}
+#first div img{
+border-radius: 50%;
+
+}
+#image{
+	float: right;
+    margin-top: 10vh;
+	width: 40%
+
+}
+#content{
+	position: relative;
+	z-index:1;
+	width:100%;
+}
+.image{
+	height:100vh;
+	width:100%;
+	
+	position: relative;
+}
+#text-first{
+    float: left;
+    margin-top: 25vh;
+    width:60%;
+}
+#slide{
+	top:0;
+	height:100vh;
+	width:100%;
+	z-index:-1;
+	position: relative;
+}
+#small-text{
+	font-family:"Lucida Console", Monaco, monospace;
+	margin-left:2%;
+	margin-right:3%;
+}
+#text-first a{
+	color:red;
+}
+#iframe{
+	width:100%;
+}
+
+
+@media screen and (max-width: 498px){
+	#text-first{
+		margin-top: 10vh;
+	}
+	#first{
+		height:25vh;
+	}
+}
+
+</style>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<script>
+window.onload=function(){var temp=0;
+slideshow();
+window.addEventListener('scroll',scroll);
+window.addEventListener("mousewheel", parallax);
+
+
+
+function scroll()
+{
+	
+	var ypos,x;
+	x=document.getElementById('slide');
+	ypos=window.pageYOffset;
+    x.style.top=(ypos*0.6) + 'px';
+    
+
+
+}
+
+ 
+function slideshow()
+{
+	var i=0;
+	var image=document.getElementsByClassName('image');
+	for(i=0; i<image.length ;i++)
+	{
+		
+		image[i].style.display="none";
+	}
+	
+	temp++;
+	if(temp>image.length){
+		temp=1;
+	}
+	image[temp-1].style.display='block';
+	setTimeout(slideshow,2000);
+	
+}
+}
+</script>
+<div id="slide">
+<img src="1.jpg" class="image">
+<img src="5.jpg" class="image">
+<img src="3.jpg" class="image">
+<img src="4.jpg" class="image">
+</div>
+<div id="content">
+<div id="iframe"><center><iframe width="70%" height="315" src="https://www.youtube.com/embed/Zd0l62YyMac" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+
+</div>
+<div id="first">
+<div id="text-first"><center><a href="#">KICK BOXING</a></center>
+<p id="small-text">Learn this stand-up combat sports based on kicking and punching</p></div>
+<div id="image">
+<img src="kickboxing.jpeg" id="show">
+</div>
+</div>
+
+<div id="first" style="background-color:#6B8E23">
+<div id="text-first"><center><a href="#">CARDIO</a></center>
+<p id="small-text">One of the most important things you can do for your body, whether you want to lose weight, burn fat or improve your health</p></div>
+<div id="image">
+<img src="cardio.jpeg" id="show">
+</div>
+</div>
+
+<div id="first" style="background-color:#6A5ACD">
+<div id="text-first"><center><a href="#">AEROBICS</a></center>
+<p id="small-text">A rhythmic aerobic exercise with stretching and strength training routines with the goal of improving all elements of fitness</p></div>
+<div id="image">
+<img src="aerobics.jpeg" id="show">
+</div>
+</div>
+
+<div id="first">
+<div id="text-first"><center><a href="#">FREE STYLE</a></center>
+<p id="small-text"> a fast growing discipline incorporating aspects of popular street activities such as Freerunning, Parkour and Tricking.</p></div>
+<div id="image">
+<img src="freestyle.jpeg" id="show">
+</div>
+</div>
+</div>
+</body>
+</html>
