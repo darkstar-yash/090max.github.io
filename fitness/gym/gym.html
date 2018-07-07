@@ -1,7 +1,6 @@
 <html>
 <head>
 <style>
-@media screen and (min-width: 499px)
 @keyframes enfold{
 	0%{
 		transform: scale(0.6);
@@ -13,9 +12,8 @@
 	}
 	}
 body{
-	margin:0;
+	margin:0 auto;
 	background:linear-gradient(red,blue);
-	width:100%;
 }
 #first{
 	height: 50vh;
@@ -80,27 +78,15 @@ border-radius: 50%;
 #iframe{
 	width:100%;
 }
-	}
+
 
 @media screen and (max-width: 498px){
-	
-	
-	@keyframes enfold{
-	0%{
-		transform: scale(0.6);
-		border-radius:70%;
+	#text-first{
+		    float: left;
+    margin-top: 3vh;
+    width:65%;
 	}
-	100%{
-		transform:scale(1);
-		border-radius: 40%: 
-	}
-	}
-body{
-	margin:0 auto;
-	background:linear-gradient(red,blue);
-	width:100%;
-}
-#first{
+	#first{
 	height: 25vh;
 	width:100%;
 	top:0;
@@ -110,59 +96,17 @@ body{
 	border-bottom: 2px solid black;
 	background-color:  	#696969;
 
-	
-}
-#first:hover div img{
-  border-radius: 20px;
-  	animation-name: enfold;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
+	}
+	#image{
+   float: right;
+    margin-top: 4vh;
+	width: 30%
 
-}
-#first div img{
-border-radius: 50%;
-
-}
-#image{
-	float: right;
-    margin-top: 5vh;
-	width: 18%
-
-}
-#content{
-	position: relative;
-	z-index:1;
-	width:100%;
-}
-.image{
-	height:100vh;
-	width:100%;
-	
-	position: relative;
-}
-#text-first{
-    float: left;
-    margin-top:5vh;
-    width:72%;
-}
-#slide{
-	top:0;
-	height:100vh;
-	width:100vw;
-	z-index:-1;
-	position: relative;
-}
-#small-text{
-	font-family:"Lucida Console", Monaco, monospace;
-	margin-left:2%;
-	margin-right:3%;
-}
-#text-first a{
-	color:red;
-}
-#iframe{
-	width:100%;
-}
+	}
+	.show{
+		width:80%;
+		height:80%;
+	}
 }
 
 </style>
@@ -223,34 +167,34 @@ function slideshow()
 
 </div>
 <div id="first">
-<div id="text-first"><center><a href="https://greatist.com/fitness/know-before-you-go-kickboxing">KICK BOXING</a></center>
+<div id="text-first"><center><a href="#">KICK BOXING</a></center>
 <p id="small-text">Learn this stand-up combat sports based on kicking and punching</p></div>
 <div id="image">
-<img src="https://090max.github.io/fitness/gym/kickboxing.jpeg" id="show">
+<img src="kickboxing.jpeg" id="show">
 </div>
 </div>
 
 <div id="first" style="background-color:#6B8E23">
-<div id="text-first"><center><a href="https://www.verywellfit.com/best-cardio-workouts-1230830">CARDIO</a></center>
+<div id="text-first"><center><a href="#">CARDIO</a></center>
 <p id="small-text">One of the most important things you can do for your body, whether you want to lose weight, burn fat or improve your health</p></div>
 <div id="image">
-<img src="https://090max.github.io/fitness/gym/cardio.jpeg" id="show">
+<img src="cardio.jpeg" id="show">
 </div>
 </div>
 
 <div id="first" style="background-color:#6A5ACD">
-<div id="text-first"><center><a href="https://www.medicinenet.com/aerobic_exercise/article.htm">AEROBICS</a></center>
+<div id="text-first"><center><a href="#">AEROBICS</a></center>
 <p id="small-text">A rhythmic aerobic exercise with stretching and strength training routines with the goal of improving all elements of fitness</p></div>
 <div id="image">
-<img src="https://090max.github.io/fitness/gym/aerobics.jpeg" id="show">
+<img src="aerobics.jpeg" id="show">
 </div>
 </div>
 
 <div id="first">
-<div id="text-first"><center><a href="https://www.dwfitnessfirst.com/inside-track/fitness/a-new-style-of-freestyle-training/">FREE STYLE</a></center>
+<div id="text-first"><center><a href="#">FREE STYLE</a></center>
 <p id="small-text"> a fast growing discipline incorporating aspects of popular street activities such as Freerunning, Parkour and Tricking.</p></div>
 <div id="image">
-<img src="https://090max.github.io/fitness/gym/freestyle.jpeg" id="show">
+<img src="freestyle.jpeg" id="show">
 </div>
 </div>
 </div>
