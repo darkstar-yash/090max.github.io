@@ -6,6 +6,7 @@
 body{
 	margin:0 auto;
 }
+@media only screen and (min-width: 480px){ 
 
 @keyframes enfold{
 	0%{
@@ -161,6 +162,165 @@ text-shadow: 2px 4px 6px green;
 	background-attachment: fixed;
 	
 }
+	}
+	
+	
+@media only screen and (max-width: 480px) {
+	@keyframes enfold{
+	0%{
+		transform: scale(0.6);
+		border-radius:70%;
+	}
+	100%{
+		transform:scale(1);
+		border-radius: 40%: 
+	}
+	}
+
+#first{
+	height: 25vh;
+	width:100vw;
+	top:0;
+	display: flex;
+	flex-direction: row;
+	border-top:2px solid black;
+	border-bottom: 2px solid black;
+	background-color:  	#696969;
+
+	
+}
+#first:hover div img{
+  border-radius: 20px;
+  	animation-name: enfold;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+
+}
+#first div img{
+border-radius: 50%;
+
+}
+#image{
+	float: right;
+    margin-top: 10vh;
+	width: 40%
+
+}
+#content{
+	position: relative;
+	z-index:1;
+	width:100%;
+}
+.image{
+	height:100vh;
+	width:100%;
+	
+	position: relative;
+}
+#text-first{
+    float: left;
+    margin-top: 3vh;
+    width:60%;
+}
+#small-text{
+	font-family:"Lucida Console", Monaco, monospace;
+	margin-left:2%;
+	margin-right:3%;
+}
+#text-first a{
+	color:purple;
+}
+
+header{
+	background-image:url('https://090max.github.io/fitness/yoga/back.jpg');
+	width:100vw;
+	height: 100vh;
+ 
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -1;
+	
+		
+}
+.one{
+    background-image:url('https://090max.github.io/fitness/yoga/back1.jpg');
+	width:100vw;
+	height: 100vh;
+
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	
+}
+.text{
+	
+	position: absolute;
+    top:45vh;
+    width: 100vw;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    z-index: 1;
+   
+
+}
+.text1{
+
+	position: relative;
+    top:45vh;
+    width: 100vw;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+   
+}
+.text span {
+     
+    text-shadow: 2px 4px 6px red;
+    background-color: grey;
+    opacity: 0.85;
+
+}
+.text1 span{
+text-shadow: 2px 4px 6px red;
+    background-color: grey;
+    opacity: 0.85;
+
+}
+.text2{
+   position: relative;
+    top:35vh;
+    
+    width: 100vw;
+    font-weight: bold;
+     font-size:1.5em;
+    color: gold;
+
+}
+.text2 span{
+text-shadow: 2px 4px 6px green;
+       opacity: 0.85;
+
+}
+.two{
+	background-image:url('https://090max.github.io/fitness/yoga/back2.jpg');
+	width:100vw;
+	height: 100vh;
+
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+	}
 
 </style>
 
