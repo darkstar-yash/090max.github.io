@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>YOGA AND MEDITATION</title>
+<style type="text/css">
+body{
+	margin:0 auto;
+}
+
+@keyframes enfold{
+	0%{
+		transform: scale(0.6);
+		border-radius:70%;
+	}
+	100%{
+		transform:scale(1);
+		border-radius: 40%: 
+	}
+	}
+
+#first{
+	height: 50vh;
+	width:100vw;
+	top:0;
+	display: flex;
+	flex-direction: row;
+	border-top:2px solid black;
+	border-bottom: 2px solid black;
+	background-color:  	#696969;
+
+	
+}
+#first:hover div img{
+  border-radius: 20px;
+  	animation-name: enfold;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+
+}
+#first div img{
+border-radius: 50%;
+
+}
+#image{
+	float: right;
+    margin-top: 10vh;
+	width: 40%
+
+}
+#content{
+	position: relative;
+	z-index:1;
+	width:100%;
+}
+.image{
+	height:100vh;
+	width:100%;
+	
+	position: relative;
+}
+#text-first{
+    float: left;
+    margin-top: 25vh;
+    width:60%;
+}
+#small-text{
+	font-family:"Lucida Console", Monaco, monospace;
+	margin-left:2%;
+	margin-right:3%;
+}
+#text-first a{
+	color:purple;
+}
+
+header{
+	background-image:url(back.jpg);
+	width:100vw;
+	height: 100vh;
+ 
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -1;
+	
+		
+}
+.one{
+    background-image:url(back1.jpg);
+	width:100vw;
+	height: 100vh;
+
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	
+}
+.text{
+	
+	position: absolute;
+    top:45vh;
+    width: 100vw;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    z-index: 1;
+   
+
+}
+.text1{
+
+	position: relative;
+    top:45vh;
+    width: 100vw;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+   
+}
+.text span {
+     
+    text-shadow: 2px 4px 6px red;
+    background-color: grey;
+    opacity: 0.85;
+
+}
+.text1 span{
+text-shadow: 2px 4px 6px red;
+    background-color: grey;
+    opacity: 0.85;
+
+}
+.text2{
+   position: relative;
+    top:35vh;
+    
+    width: 100vw;
+    font-weight: bold;
+     font-size:1.5em;
+    color: gold;
+
+}
+.text2 span{
+text-shadow: 2px 4px 6px green;
+       opacity: 0.85;
+
+}
+.two{
+	background-image:url(back2.jpg);
+	width:100vw;
+	height: 100vh;
+
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<script>
+	  
+       $(window).scroll(function()
+       {
+       
+       var scroll=$(window).scrollTop();
+       $('header').offset({top:(scroll*0.8)});
+      
+});
+
+
+
+
+</script>
+
+<body>
+   <header>
+   <center>   
+   <div class="text">
+ <span>LEARN THE SECRET OF HEALTH
+  <br> SCROLL DOWN </span>
+ 
+   </div>
+   </center>
+  </header>
+
+  <div id="content">
+
+<div id="first">
+<div id="text-first"><center><a href="https://www.yogajournal.com/yoga-101/types-of-yoga/hatha">HATHA YOGA &#x25B8;</a></center>
+<p id="small-text">Hatha yoga is a branch of yoga. The word haṭha literally means "force" and thus alludes to a system of physical techniques</p></div>
+<div id="image">
+<img src="hatha.jpeg" id="show">
+</div>
+</div>
+
+<div id="first" style="background-color: #637383">
+<div id="text-first"><center><a href="https://www.yogajournal.com/yoga-101/types-of-yoga/ashtanga-yoga">Ashtanga vinyasa yoga  &#x25B8;</a></center>
+<p id="small-text">Ashtanga Vinyasa Yoga improves flexibility of the muscles, joints, ligaments and tendons. Learn this technique</p></div>
+<div id="image">
+<img src="ashta.jpeg" id="show">
+</div>
+</div>
+
+<div id="first" style="background-color:#B0C4DE">
+<div id="text-first"><center><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=12&cad=rja&uact=8&ved=0ahUKEwiSnfWJkozcAhVFXSsKHdFdDiUQFgh3MAs&url=https%3A%2F%2Fwww.bikramyoga.com%2Fabout%2F26-postures%2F&usg=AOvVaw1ljAQLjkjWoZS8ayoc3clO">BIKARAM YOGA &#x25B8;</a></center>
+<p id="small-text">Learn this amazing technique that keeps you energetic and healthy throughout the day</p></div>
+<div id="image">
+<img src="bikram.jpeg" id="show">
+</div>
+</div>
+
+<article class="one">
+  <center>
+  <div class="text1">
+ <span>LEARN THE POWER OF MEDITATION
+   </span>
+  </div>
+  </center>
+</article>
+
+<div id="first">
+<div id="text-first"><center><a href="https://in.tm.org/">Transcendental Meditation &#x25B8;</a></center>
+<p id="small-text"> Learn the technique for inner peace and wellness.</p></div>
+<div id="image">
+<img src="tran-med.jpeg" id="show">
+</div>
+</div>
+<div id="first" style="background-color:#8b99a7">
+<div id="text-first"><center><a href="https://iamheart.org/Heart_Rhythm_Meditation/">Heart Rhythm Meditation &#x25B8;</a></center>
+<p id="small-text">Heart breathing meditation is an incredible powerful form of meditation.</p></div>
+<div id="image">
+<img src="heart-med.jpeg" id="show">
+</div>
+</div>
+</div>
+<article class="two">
+  <center>
+  <div class="text2">
+ <span>INHALE THE FUTURE.EXHALE THE PAST
+   </span>
+  </div>
+  </center>
+</article>
+
+</body>
+</html>
