@@ -1,9 +1,8 @@
+
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
-
-@media only screen and (min-width: 499px)
 @keyframes enfold{
 	0%{
 		transform: scale(0.6);
@@ -20,10 +19,8 @@ body{
 }
 #first{
 	height: 50vh;
-	width:100%;
+	width:100vw;
 	top:0;
-	display: flex;
-	flex-direction: row;
 	border-top:2px solid black;
 	border-bottom: 2px solid black;
 	background-color:  	#696969;
@@ -44,7 +41,7 @@ border-radius: 50%;
 #image{
 	float: right;
     margin-top: 10vh;
-	width: 40%;
+	width: 40%
 
 }
 #content{
@@ -54,26 +51,31 @@ border-radius: 50%;
 }
 .image{
 	height:100vh;
-	width:100vw;
+	width:100%;
 	
 	position: relative;
 }
 #text-first{
-    float: left;
-    margin-top: 25vh;
-    width:60%;
+   
+    
+    width:100vw;
+    margin-top: 2vw;
+    text-align: left;
 }
 #slide{
 	top:0;
 	height:100vh;
-	width:100vw;
+	width:100%;
 	z-index:-1;
 	position: relative;
 }
 #small-text{
 	font-family:"Lucida Console", Monaco, monospace;
-	margin-left:2%;
-	margin-right:3%;
+	
+	float: left;
+	width:50vw;
+	margin-left: 1%;
+	
 }
 #text-first a{
 	color:red;
@@ -82,96 +84,65 @@ border-radius: 50%;
 	width:100%;
 }
 
-
-@media only screen and (max-width: 498px){
-
-	
-	
-	
-	
-	
-	@keyframes enfold{
-	0%{
-		transform: scale(0.6);
-		border-radius:70%;
-	}
-	100%{
-		transform:scale(1);
-		border-radius: 40%: 
-	}
-	}
-body{
-	margin:0 auto;
-	background:linear-gradient(red,blue);
+#show{
+	float: right;
+	width:20vw;
+	margin-right: 3%;
 }
-#first{
-	height: 25vh;
-	width:100%;
+
+#head{
+	margin-top:2vw;
+	width:100vw;
+	text-align: center;
+
+}
+
+
+
+@media screen and (max-width:490px)
+{
+	#first{
+			height: 25vh;
+	width:100vw;
 	top:0;
-	display: flex;
-	flex-direction: row;
 	border-top:2px solid black;
 	border-bottom: 2px solid black;
 	background-color:  	#696969;
 
-	
-}
-#first:hover div img{
-  border-radius: 20px;
-  	animation-name: enfold;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
+	}
 
-}
-#first div img{
-border-radius: 50%;
-
-}
-#image{
-	float: right;
-    margin-top: 10vh;
-	width: 30%;
-	height:40%;
-
-}
-#content{
-	position: relative;
-	z-index:1;
-	width:100%;
-}
-.image{
-	height:100vh;
-	width:100vw;
-	
-	position: relative;
-}
-#text-first{
-    float: left;
-    margin-top: 3vh;
-    width:65%;
-}
-#slide{
-	top:0;
-	height:100vh;
-	width:100vw;
-	z-index:-1;
-	position: relative;
+	#text-first{
+   
+    
+    width:100vw;
+    margin-top: 1vw;
+    text-align: left;
 }
 #small-text{
 	font-family:"Lucida Console", Monaco, monospace;
-	margin-left:2%;
-	margin-right:3%;
+	
+	float: left;
+	width:59vw;
+	margin-left: 1%;
+	
 }
-#text-first a{
-	color:red;
+#show{
+	float: right;
+	width:25vw;
+	margin-right: 2%;
 }
-#iframe{
-	width:100%;
+
+#head{
+	margin-top:1vw;
+	width:100vw;
+	text-align: center;
+
 }
+
+
 }
 
 </style>
-
 </head>
 <body>
 <script>
@@ -216,44 +187,44 @@ function slideshow()
 }
 </script>
 <div id="slide">
-<img src="1.jpg" class="image">
-<img src="5.jpg" class="image">
-<img src="3.jpg" class="image">
-<img src="4.jpg" class="image">
+<img src="https://090max.github.io/fitness/gym/1.jpg" class="image">
+<img src="https://090max.github.io/fitness/gym/5.jpg" class="image">
+<img src="https://090max.github.io/fitness/gym/3.jpg" class="image">
+<img src="https://090max.github.io/fitness/gym/4.jpg" class="image">
 </div>
 <div id="content">
 <div id="iframe"><center><iframe width="70%" height="315" src="https://www.youtube.com/embed/Zd0l62YyMac" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 
 </div>
 <div id="first">
-<div id="text-first"><center><a href="#">KICK BOXING</a></center>
-<p id="small-text">Learn this stand-up combat sports based on kicking and punching</p></div>
-<div id="image">
-<img src="kickboxing.jpeg" id="show">
+<div id="head"><center><a href="http://www.rulesofsport.com/sports/kickboxing.html">KICK BOXING</a></center></div>
+<div id="text-first">
+<span id="small-text">Learn this stand-up combat sports based on kicking and punching</span>
+<img src="https://090max.github.io/fitness/gym/kickboxing.jpeg" id="show">
 </div>
 </div>
 
 <div id="first" style="background-color:#6B8E23">
-<div id="text-first"><center><a href="#">CARDIO</a></center>
-<p id="small-text">One of the most important things you can do for your body, whether you want to lose weight, burn fat or improve your health</p></div>
-<div id="image">
-<img src="cardio.jpeg" id="show">
+<div id="head"><center><a href="https://cardio-workout.wonderhowto.com/">CARDIO</a></center></div>
+<div id="text-first">
+<span id="small-text">One of the most important things you can do for your body, whether you want to lose weight, burn fat or improve your health</span>
+<img src="https://090max.github.io/fitness/gym/cardio.jpeg" id="show">
 </div>
 </div>
 
 <div id="first" style="background-color:#6A5ACD">
-<div id="text-first"><center><a href="#">AEROBICS</a></center>
-<p id="small-text">A rhythmic aerobic exercise with stretching and strength training routines with the goal of improving all elements of fitness</p></div>
-<div id="image">
-<img src="aerobics.jpeg" id="show">
+<div id="head"><center><a href="https://cardio-workout.wonderhowto.com/">AEROBICS</a></center></div>
+<div id="text-first">
+<span id="small-text">A rhythmic aerobic exercise with stretching and strength training routines with the goal of improving all elements of fitness</span>
+<img src="https://090max.github.io/fitness/gym/aerobics.jpeg" id="show">
 </div>
 </div>
 
 <div id="first">
-<div id="text-first"><center><a href="#">FREE STYLE</a></center>
-<p id="small-text"> a fast growing discipline incorporating aspects of popular street activities such as Freerunning, Parkour and Tricking.</p></div>
-<div id="image">
-<img src="freestyle.jpeg" id="show">
+<div id="head"><center><a href="https://www.littlespringersgymnastics.com/freestyle-gymnastics/">FREE STYLE</a></center></div>
+<div id="text-first">
+<span id="small-text"> A fast growing discipline incorporating aspects of popular street activities such as Freerunning, Parkour and Tricking.</span>
+<img src="https://090max.github.io/fitness/gym/freestyle.jpeg" id="show">
 </div>
 </div>
 </div>
